@@ -50,3 +50,25 @@ input {
     border: none;
     cursor: pointer;
 }
+
+/** style header  */
+
+.header {
+    grid-area: my-header;
+}
+.main {
+    grid-area: my-main;
+}
+.aside {
+    grid-area: my-aside;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+    "my-header my-header"
+    "my-aside my-main"
+    "my-aside my-main";
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 8rem 5.9rem;
+}
