@@ -245,12 +245,27 @@ input {
     font-size: 2rem;
     line-height: 115%;
     color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
 }
 
 .title__right span {
+    position: relative;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 115%;
     color: rgba(255, 255, 255, 0.2);
     padding-right: 1.5rem;
+    cursor: pointer;
+}
+
+.title__right span::after {
+    content: "";
+    position: absolute;
+    top: .4rem;
+    right: 0;
+    transform: rotate(45deg);
+    width: 1rem;
+    height: 1rem;
+    border-right: .3rem solid rgba(255, 255, 255, 0.2);
+    border-top: .3rem solid rgba(255, 255, 255, 0.2);
 }
