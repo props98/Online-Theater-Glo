@@ -71,13 +71,17 @@ input {
     "my-aside my-main my-main"
     "my-aside my-main my-main";
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    gap: 8rem 0;
+    gap: 3rem 0;
 }
 
 .grid-init {
     max-width: 144rem;
     margin: auto;
     padding: 3rem 2.4rem 4rem;
+}
+
+.header {
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.07);
 }
 
 .header__wrap {
@@ -156,6 +160,9 @@ input {
 }
 
 /*! style main Views */
+.main-display {
+    padding-top: 5rem;
+}
 
 .main-display__trailer {
     position: relative;
@@ -374,7 +381,7 @@ input {
     display: flex;
     align-items: flex-end;
     width: 30%;
-    height: 19.2rem;
+    height: 22rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -444,7 +451,23 @@ input {
 /*! style Aside TITLE */
 
 .aside {
+    position: relative;
     padding-right: 5.9rem;
+}
+
+.aside::after {
+    content: url(../img/arrow-aside.svg);
+    position: absolute;
+    top: 10rem;
+    right: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.2rem;
+    height: 2.6rem;
+    background: #FCFCFE;
+    border-radius: 2rem;
+    cursor: pointer;
 }
 
 .aside__title {
@@ -505,8 +528,10 @@ input {
     margin-bottom: 3rem;
 }
 
-.aside__wrap-trailers {
-    margin-bottom: 4rem;
+.aside__top {
+    padding: 5rem 2.3rem 4rem 2.4rem;
+    background: #17161B;
+    border-right: .2rem solid rgba(255, 255, 255, 0.02);
 }
 
 .aside__views {
@@ -529,10 +554,13 @@ input {
 
 /*! style ASIDE Footer */
 
+.aside__wrap {
+    background: rgba(255, 255, 255, 0.02);;
+}
+
 .aside__bottom {
     height: 100%;
-    padding: 2.5rem 0 2rem 0;
-    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem 0 2rem 2.4rem;
 }
 
 .aside__favourite-text {
@@ -576,12 +604,12 @@ input {
     background: #63CFE1;
 }
 
-.aside__footer {
+.aside__bottom-footer {
     position: relative;
     padding-top: 3rem;
 }
 
-.aside__footer:after {
+.aside__bottom-footer:after {
     content: "";
     position: absolute;
     top: 0;
