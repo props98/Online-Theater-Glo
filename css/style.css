@@ -80,9 +80,9 @@ input {
     padding: 3rem 2.4rem 4rem;
 }
 
-.header {
+/* .header {
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.07);
-}
+} */
 
 .header__wrap {
     display: flex;
@@ -586,6 +586,7 @@ input {
     margin: 1rem 0;
     background: yellow;
     border-radius: 3rem;
+    cursor: pointer;
 }
 
 .aside__genre:not(:last-child) {
